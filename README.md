@@ -1,8 +1,9 @@
 # okta-python-scripts
 This repo is to document the scripts that I've created that aren't typically provided in the Okta Python SDK.
 
-# Authentication
-Please generate an API key in Okta to use against the API call
+# How to authenticate
+Please generate a basic API key in Okta to use against the API call.
+https://developer.okta.com/docs/guides/create-an-api-token/main/
 
 ## get-devices.py
 This script can retrieve all devices including user information embedded and export it into both JSON and normalised CSV file for easy reference.
