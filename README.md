@@ -3,6 +3,7 @@ This repo is to document the scripts that I've created that aren't typically pro
 
 # How to authenticate
 Please generate a basic API key in Okta to use against the API call.
+
 https://developer.okta.com/docs/guides/create-an-api-token/main/
 
 ## get-devices.py
