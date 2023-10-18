@@ -13,7 +13,7 @@ today = datetime.datetime.today().date()
 formatted_date = today.strftime("%d-%m-%Y")
 print(f"📅 Today is: {formatted_date}")
 
-#use .env file for api_key
+#create a .env file for api_key 
 token = os.getenv("API_KEY_PROD")
 oktaOrg = 'enter your okta org here'
     
@@ -55,9 +55,9 @@ def get_devices():
             raise Exception("Got HTTP {} listing users",
                             device_response.status_code)
 
-        list_users_response_body = device_response.json()
+        response = device_response.json()
 
-        okta_devices.extend([x for x in list_users_response_body])
+        okta_devices.extend([x for x in response])
 
         #paginate with next url
         if 'next' in device_response.links:
